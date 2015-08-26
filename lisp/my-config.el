@@ -2,7 +2,7 @@
 (if (not (boundp 'erlang-root-dir))
 	(setq erlang-root-dir "/usr/local/Cellar/erlang/17.4.1/lib/erlang")) ;; Mac
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/lisp/themes/emacs-color-theme-solarized")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/lisp/themes/solarized")
 
 ;; Hook up all the major and minor modes we care about
 (require 'emacs-modes)
