@@ -34,10 +34,10 @@
 ;; (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 
 
-(dolist (hook (list
-               'c-mode-hook
-		))
-  (add-hook hook 'flymake-find-file-hook))
+;; (dolist (hook (list
+;;                'c-mode-hook
+;; 		))
+;;  (add-hook hook 'flymake-find-file-hook))
 
 ;; flymake-shell
 (add-hook 'sh-mode-hook 'flymake-shell-load)

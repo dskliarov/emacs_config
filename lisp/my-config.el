@@ -136,42 +136,21 @@
 (defun track-mouse (e)) 
 (setq mouse-sel-mode t)
 
-(require 'cc-mode)
-(require 'semantic)
-(global-semanticdb-minor-mode 1)
-(global-semantic-idle-scheduler-mode 1)
-(setq-default c-basic-offset 4 c-default-style "linux")
-(setq-default tab-width 4 indent-tabs-mode t)
+;; (require 'autopair)
+;; (autopair-global-mode 1)
+;; (setq autopair-autowrap t)
 
-(semantic-mode 1)
-;;; activate ecb
+(add-to-list 'load-path "~/.emacs.d/lisp/cpp-ide")
+(require 'cpp-ide)
 (setq stack-trace-on-error t)
-(require 'cedet)
-(require 'semantic/tag)
-(require 'semantic/lex)
 (require 'ecb)
-(require 'autopair)
-(autopair-global-mode 1)
-(setq autopair-autowrap t)
-(require 'ggtags)
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
-              (ggtags-mode 1))))
-
-(require 'ede)
-(global-ede-mode t)                      ; Enable the Project management system
-(global-ede-mode 1)
-
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-
 (require 'key-bindings)
 (require 'elixir-mode)
 (require 'elixir-yasnippets)
 (require 'lacarte)
 (require 'restclient)
+(nyan-mode 1)
 
-(setq custom-file "~/.emacs.d/lisp/emacs-custom.el")
+(setq custom-file "./emacs-custom.el")
 (load custom-file)
 (provide 'my-config)

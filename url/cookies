@@ -1,0 +1,14 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".atlassian.com"
+  [url-cookie "__atl_path" "172.24.36.107.1440613812965616" "23 Aug 25 18:30:12 [GMT]" "/" ".atlassian.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

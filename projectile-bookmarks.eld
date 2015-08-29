@@ -1,0 +1,1 @@
+("~/erlang_projects/Qks_app/" "~/.emacs.d/" "~/cpp_projects/c-demo-project/" "~/cpp_projects/Test_cpp/" "~/erlang_projects/erlang-lua/")
