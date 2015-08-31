@@ -1,0 +1,465 @@
+;; Object sys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sys/"
+  :tables
+  (list
+    (semanticdb-table "unistd.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SYS_UNISTD_H_" variable (:constant-flag t) nil [3299 3313])
+            ("sys/cdefs.h" include (:system-flag t) nil [3315 3337])
+            ("_POSIX_VERSION" variable (:constant-flag t) nil [3710 3724])
+            ("_POSIX2_VERSION" variable (:constant-flag t) nil [3742 3757])
+            ("sys/_types/_posix_vdisable.h" include (:system-flag t) nil [3858 3897])
+            ("_POSIX_THREAD_KEYS_MAX" variable (:constant-flag t) nil [3907 3929])
+            ("F_OK" variable (:constant-flag t) nil [3965 3969])
+            ("X_OK" variable (:constant-flag t) nil [4014 4018])
+            ("W_OK" variable (:constant-flag t) nil [4079 4083])
+            ("R_OK" variable (:constant-flag t) nil [4132 4136])
+            ("_READ_OK" variable (:constant-flag t) nil [4394 4402])
+            ("_WRITE_OK" variable (:constant-flag t) nil [4456 4465])
+            ("_EXECUTE_OK" variable (:constant-flag t) nil [4528 4539])
+            ("_DELETE_OK" variable (:constant-flag t) nil [4596 4606])
+            ("_APPEND_OK" variable (:constant-flag t) nil [4660 4670])
+            ("_RMFILE_OK" variable (:constant-flag t) nil [4740 4750])
+            ("_RATTR_OK" variable (:constant-flag t) nil [4804 4813])
+            ("_WATTR_OK" variable (:constant-flag t) nil [4858 4867])
+            ("_REXT_OK" variable (:constant-flag t) nil [4913 4921])
+            ("_WEXT_OK" variable (:constant-flag t) nil [4969 4977])
+            ("_RPERM_OK" variable (:constant-flag t) nil [5026 5035])
+            ("_WPERM_OK" variable (:constant-flag t) nil [5075 5084])
+            ("_CHOWN_OK" variable (:constant-flag t) nil [5125 5134])
+            ("_ACCESS_EXTENDED_MASK" variable (:constant-flag t) nil [5175 5196])
+            ("sys/_types/_seek_set.h" include (:system-flag t) nil [5420 5453])
+            ("L_SET" variable (:constant-flag t) nil [5580 5585])
+            ("L_INCR" variable (:constant-flag t) nil [5604 5610])
+            ("L_XTND" variable (:constant-flag t) nil [5629 5635])
+            ("accessx_descriptor" type
+               (:members 
+                  ( ("ad_name_offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [5742 5770])
+                    ("ad_flags" variable (:type "int") (reparse-symbol classsubparts) [5772 5785])
+                    ("ad_pad" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [5787 5801]))                  
+                :type "struct")
+                nil [5713 5804])
+            ("ACCESSX_MAX_DESCRIPTORS" variable (:constant-flag t) nil [5813 5836])
+            ("ACCESSX_MAX_TABLESIZE" variable (:constant-flag t) nil [5849 5870])
+            ("_PC_LINK_MAX" variable (:constant-flag t) nil [5937 5949])
+            ("_PC_MAX_CANON" variable (:constant-flag t) nil [5962 5975])
+            ("_PC_MAX_INPUT" variable (:constant-flag t) nil [5988 6001])
+            ("_PC_NAME_MAX" variable (:constant-flag t) nil [6014 6026])
+            ("_PC_PATH_MAX" variable (:constant-flag t) nil [6039 6051])
+            ("_PC_PIPE_BUF" variable (:constant-flag t) nil [6064 6076])
+            ("_PC_CHOWN_RESTRICTED" variable (:constant-flag t) nil [6089 6109])
+            ("_PC_NO_TRUNC" variable (:constant-flag t) nil [6121 6133])
+            ("_PC_VDISABLE" variable (:constant-flag t) nil [6146 6158])
+            ("_PC_NAME_CHARS_MAX" variable (:constant-flag t) nil [6231 6249])
+            ("_PC_CASE_SENSITIVE" variable (:constant-flag t) nil [6262 6280])
+            ("_PC_CASE_PRESERVING" variable (:constant-flag t) nil [6294 6313])
+            ("_PC_EXTENDED_SECURITY_NP" variable (:constant-flag t) nil [6327 6351])
+            ("_PC_AUTH_OPAQUE_NP" variable (:constant-flag t) nil [6370 6388])
+            ("_PC_2_SYMLINKS" variable (:constant-flag t) nil [6413 6427])
+            ("_PC_ALLOC_SIZE_MIN" variable (:constant-flag t) nil [6477 6495])
+            ("_PC_ASYNC_IO" variable (:constant-flag t) nil [6548 6560])
+            ("_PC_FILESIZEBITS" variable (:constant-flag t) nil [6606 6622])
+            ("_PC_PRIO_IO" variable (:constant-flag t) nil [6673 6684])
+            ("_PC_REC_INCR_XFER_SIZE" variable (:constant-flag t) nil [6733 6755])
+            ("_PC_REC_MAX_XFER_SIZE" variable (:constant-flag t) nil [6808 6829])
+            ("_PC_REC_MIN_XFER_SIZE" variable (:constant-flag t) nil [6882 6903])
+            ("_PC_REC_XFER_ALIGN" variable (:constant-flag t) nil [6956 6974])
+            ("_PC_SYMLINK_MAX" variable (:constant-flag t) nil [7021 7036])
+            ("_PC_SYNC_IO" variable (:constant-flag t) nil [7086 7097])
+            ("_PC_XATTR_SIZE_BITS" variable (:constant-flag t) nil [7142 7161])
+            ("_CS_PATH" variable (:constant-flag t) nil [7257 7265])
+            ("machine/_types.h" include (:system-flag t) nil [7312 7339])
+            ("sys/_types/_size_t.h" include (:system-flag t) nil [7340 7371])
+            ("_types/_uint64_t.h" include (:system-flag t) nil [7372 7401])
+            ("Availability.h" include (:system-flag t) nil [7402 7427])
+            ("__OSX_AVAILABLE_STARTING" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type ("__MAC_10_10" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7528 7540])
+                    ("" variable (:type ("__IPHONE_8_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7541 7554]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7503 7555]))          
+      :file "unistd.h"
+      :pointmax 8692
+      :fsize 8691
+      :lastmodtime '(21776 25195 0 0)
+      :unmatched-syntax '((semantic-list 7463 . 7502) (symbol 7448 . 7463) (INT 7444 . 7447))
+      :lexical-table 
+        '(("_READ_OK" . ((semantic-list "(1<<9)" 4403 . 4409)))
+          ("_PC_LINK_MAX" . ((number "1" 5952 . 5953)))
+          ("_PC_MAX_CANON" . ((number "2" 5978 . 5979)))
+          ("_PC_EXTENDED_SECURITY_NP" . ((number "13" 6359 . 6361)))
+          ("_PC_ASYNC_IO" . ((number "17" 6562 . 6564)))
+          ("R_OK" . ((semantic-list "(1<<2)" 4138 . 4144)))
+          ("_PC_AUTH_OPAQUE_NP" . ((number "14" 6394 . 6396)))
+          ("F_OK" . ((number "0" 3971 . 3972)))
+          ("_WRITE_OK" . ((semantic-list "(1<<10)" 4466 . 4473)))
+          ("_PC_2_SYMLINKS" . ((number "15" 6429 . 6431)))
+          ("_RPERM_OK" . ((semantic-list "(1<<19)" 5036 . 5043)))
+          ("_PC_NAME_CHARS_MAX" . ((number "10" 6251 . 6253)))
+          ("_PC_REC_INCR_XFER_SIZE" . ((number "20" 6756 . 6758)))
+          ("_PC_SYNC_IO" . ((number "25" 7099 . 7101)))
+          ("_RATTR_OK" . ((semantic-list "(1<<15)" 4814 . 4821)))
+          ("_CHOWN_OK" . ((semantic-list "(1<<21)" 5135 . 5142)))
+          ("_PC_REC_MAX_XFER_SIZE" . ((number "21" 6830 . 6832)))
+          ("_PC_SYMLINK_MAX" . ((number "24" 7038 . 7040)))
+          ("_POSIX2_VERSION" . ((number "200112L" 3759 . 3766)))
+          ("_POSIX_THREAD_KEYS_MAX" . ((number "128" 3930 . 3933)))
+          ("_DELETE_OK" . ((semantic-list "(1<<12)" 4607 . 4614)))
+          ("_RMFILE_OK" . ((semantic-list "(1<<14)" 4751 . 4758)))
+          ("_WPERM_OK" . ((semantic-list "(1<<20)" 5085 . 5092)))
+          ("_PC_CASE_SENSITIVE" . ((number "11" 6283 . 6285)))
+          ("W_OK" . ((semantic-list "(1<<1)" 4085 . 4091)))
+          ("_WATTR_OK" . ((semantic-list "(1<<16)" 4868 . 4875)))
+          ("ACCESSX_MAX_DESCRIPTORS" . ((number "100" 5837 . 5840)))
+          ("_PC_CHOWN_RESTRICTED" . ((number "7" 6111 . 6112)))
+          ("_PC_VDISABLE" . ((number "9" 6161 . 6162)))
+          ("_PC_ALLOC_SIZE_MIN" . ((number "16" 6496 . 6498)))
+          ("X_OK" . ((semantic-list "(1<<0)" 4020 . 4026)))
+          ("_EXECUTE_OK" . ((semantic-list "(1<<11)" 4540 . 4547)))
+          ("_REXT_OK" . ((semantic-list "(1<<17)" 4922 . 4929)))
+          ("_PC_PIPE_BUF" . ((number "6" 6079 . 6080)))
+          ("_PC_REC_MIN_XFER_SIZE" . ((number "22" 6904 . 6906)))
+          ("_CS_PATH" . ((number "1" 7268 . 7269)))
+          ("_SYS_UNISTD_H_")
+          ("ACCESSX_MAX_TABLESIZE" . ((semantic-list "(16 * 1024)" 5871 . 5882)))
+          ("_PC_MAX_INPUT" . ((number "3" 6004 . 6005)))
+          ("_APPEND_OK" . ((semantic-list "(1<<13)" 4671 . 4678)))
+          ("L_SET" . ((symbol "SEEK_SET" 5587 . 5595)))
+          ("L_XTND" . ((symbol "SEEK_END" 5637 . 5645)))
+          ("_PC_NO_TRUNC" . ((number "8" 6136 . 6137)))
+          ("_PC_NAME_MAX" . ((number "4" 6029 . 6030)))
+          ("_PC_PATH_MAX" . ((number "5" 6054 . 6055)))
+          ("_PC_CASE_PRESERVING" . ((number "12" 6316 . 6318)))
+          ("_POSIX_VERSION" . ((number "200112L" 3726 . 3733)))
+          ("_ACCESS_EXTENDED_MASK" . ((semantic-list "(_READ_OK | _WRITE_OK | _EXECUTE_OK | \\
+				_DELETE_OK | _APPEND_OK | \\
+				_RMFILE_OK | _REXT_OK | \\
+				_WEXT_OK | _RATTR_OK | _WATTR_OK | _RPERM_OK | \\
+				_WPERM_OK | _CHOWN_OK)" 5197 . 5378)))
+          ("_PC_FILESIZEBITS" . ((number "18" 6623 . 6625)))
+          ("_PC_XATTR_SIZE_BITS" . ((number "26" 7163 . 7165)))
+          ("_WEXT_OK" . ((semantic-list "(1<<18)" 4978 . 4985)))
+          ("L_INCR" . ((symbol "SEEK_CUR" 5612 . 5620)))
+          ("_PC_PRIO_IO" . ((number "19" 6686 . 6688)))
+          ("_PC_REC_XFER_ALIGN" . ((number "23" 6975 . 6977)))
+          )
+)
+    (semanticdb-table "select.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SYS_SELECT_H_" variable (:constant-flag t) nil [3244 3258])
+            ("sys/appleapiopts.h" include (:system-flag t) nil [3260 3289])
+            ("sys/cdefs.h" include (:system-flag t) nil [3290 3312])
+            ("sys/_types.h" include (:system-flag t) nil [3313 3336])
+            ("sys/_types/_fd_def.h" include (:system-flag t) nil [3558 3589])
+            ("sys/_types/_timespec.h" include (:system-flag t) nil [3590 3623])
+            ("sys/_types/_timeval.h" include (:system-flag t) nil [3624 3656])
+            ("sys/_types/_time_t.h" include (:system-flag t) nil [3816 3847])
+            ("sys/_types/_suseconds_t.h" include (:system-flag t) nil [3848 3884])
+            ("sys/_types/_sigset_t.h" include (:system-flag t) nil [3885 3918])
+            ("sys/_types/_fd_setsize.h" include (:system-flag t) nil [4321 4356])
+            ("sys/_types/_fd_set.h" include (:system-flag t) nil [4357 4388])
+            ("sys/_types/_fd_clr.h" include (:system-flag t) nil [4389 4420])
+            ("sys/_types/_fd_isset.h" include (:system-flag t) nil [4421 4454])
+            ("sys/_types/_fd_zero.h" include (:system-flag t) nil [4455 4487])
+            ("sys/_types/_fd_copy.h" include (:system-flag t) nil [4548 4580])
+            ("sys/_select.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [5269 5293])
+            ("pselect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [4683 4687])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4688 4708])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4709 4729])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4732 4752])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4753 4788])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sigset_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4791 4819]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4670 5243]))          
+      :file "select.h"
+      :pointmax 5363
+      :fsize 5362
+      :lastmodtime '(21776 25192 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SYS_SELECT_H_")
+          )
+)
+    (semanticdb-table "_types.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SYS__TYPES_H_" variable (:constant-flag t) nil [1362 1376])
+            ("sys/cdefs.h" include (:system-flag t) nil [1378 1400])
+            ("machine/_types.h" include (:system-flag t) nil [1401 1428])
+            ("__DARWIN_NULL" variable (:constant-flag t) nil [1674 1687])
+            ("__darwin_blkcnt_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1937 1973])
+            ("__darwin_blksize_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1993 2030])
+            ("__darwin_dev_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2058 2091])
+            ("__darwin_fsblkcnt_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [2105 2146])
+            ("__darwin_fsfilcnt_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [2182 2223])
+            ("__darwin_gid_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2259 2293])
+            ("__darwin_id_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2329 2362])
+            ("__darwin_ino64_t" type
+               (:typedef ("__uint64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2398 2434])
+            ("__darwin_ino_t" type
+               (:typedef ("__darwin_ino64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2496 2536])
+            ("__darwin_mach_port_name_t" type
+               (:typedef ("__darwin_natural_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2699 2752])
+            ("__darwin_mach_port_t" type
+               (:typedef ("__darwin_mach_port_name_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2772 2827])
+            ("__darwin_mode_t" type
+               (:typedef ("__uint16_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2847 2882])
+            ("__darwin_off_t" type
+               (:typedef ("__int64_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2916 2949])
+            ("__darwin_pid_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2983 3016])
+            ("__darwin_sigset_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3052 3089])
+            ("__darwin_suseconds_t" type
+               (:typedef ("__int32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3113 3152])
+            ("__darwin_uid_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3178 3212])
+            ("__darwin_useconds_t" type
+               (:typedef ("__uint32_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3235 3274])
+            ("__darwin_uuid_t" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [3300 3342])
+            ("__darwin_uuid_string_t" type
+               (:typedef ("char")
+                :type "typedef")
+                nil [3343 3383])
+            ("sys/_pthread/_pthread_types.h" include (:system-flag t) nil [3385 3425])
+            ("__offsetof" variable (:constant-flag t) nil [3515 3525]))          
+      :file "_types.h"
+      :pointmax 3717
+      :fsize 3716
+      :lastmodtime '(21776 25196 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__offsetof" (spp-arg-list ("type" "field") 3525 . 3538) . ((symbol "__builtin_offsetof" 3539 . 3557) (semantic-list "(type, field)" 3557 . 3570)))
+          ("__DARWIN_NULL" . ((symbol "__null" 1688 . 1694)))
+          ("_SYS__TYPES_H_")
+          )
+)
+    (semanticdb-table "cdefs.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "cdefs.h"
+      :pointmax 26063
+      :fsize 26062
+      :lastmodtime '(21776 25187 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "stdio.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SYS_STDIO_H_" variable (:constant-flag t) nil [1356 1369])
+            ("sys/cdefs.h" include (:system-flag t) nil [1371 1393]))          
+      :file "stdio.h"
+      :pointmax 1656
+      :fsize 1655
+      :lastmodtime '(21776 25192 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SYS_STDIO_H_")
+          )
+)
+    (semanticdb-table "appleapiopts.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__SYS_APPLEAPIOPTS_H__" variable (:constant-flag t) nil [1375 1397])
+            ("__APPLE_API_STANDARD" variable (:constant-flag t) nil [1437 1457])
+            ("__APPLE_API_STABLE" variable (:constant-flag t) nil [1528 1546])
+            ("__APPLE_API_EVOLVING" variable (:constant-flag t) nil [1657 1677])
+            ("__APPLE_API_UNSTABLE" variable (:constant-flag t) nil [1750 1770])
+            ("__APPLE_API_PRIVATE" variable (:constant-flag t) nil [1842 1861])
+            ("__APPLE_API_OBSOLETE" variable (:constant-flag t) nil [1933 1953]))          
+      :file "appleapiopts.h"
+      :pointmax 2071
+      :fsize 2070
+      :lastmodtime '(21776 25186 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__APPLE_API_STANDARD")
+          ("__APPLE_API_UNSTABLE")
+          ("__APPLE_API_OBSOLETE")
+          ("__APPLE_API_EVOLVING")
+          ("__SYS_APPLEAPIOPTS_H__")
+          ("__APPLE_API_PRIVATE")
+          ("__APPLE_API_STABLE")
+          )
+)
+    (semanticdb-table "_select.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SYS__SELECT_H_" variable (:constant-flag t) nil [1715 1730])
+            ("select" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1744 1748])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1749 1769])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1770 1790])
+                    ("" variable
+                       (:pointer 1
+                        :type ("fd_set" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1793 1813])
+                    ("" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1814 1842]))                  
+                :type "int")
+                nil [1732 2263]))          
+      :file "_select.h"
+      :pointmax 2295
+      :fsize 2294
+      :lastmodtime '(21776 25196 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_SYS__SELECT_H_")
+          )
+)
+    (semanticdb-table "syslimits.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_SYS_SYSLIMITS_H_" variable (:constant-flag t) nil [3312 3329])
+            ("sys/cdefs.h" include (:system-flag t) nil [3331 3353])
+            ("ARG_MAX" variable (:constant-flag t) nil [3532 3539])
+            ("CHILD_MAX" variable (:constant-flag t) nil [3661 3670])
+            ("GID_MAX" variable (:constant-flag t) nil [3720 3727])
+            ("LINK_MAX" variable (:constant-flag t) nil [3841 3849])
+            ("MAX_CANON" variable (:constant-flag t) nil [3891 3900])
+            ("MAX_INPUT" variable (:constant-flag t) nil [3957 3966])
+            ("NAME_MAX" variable (:constant-flag t) nil [4016 4024])
+            ("NGROUPS_MAX" variable (:constant-flag t) nil [4071 4082])
+            ("UID_MAX" variable (:constant-flag t) nil [4191 4198])
+            ("OPEN_MAX" variable (:constant-flag t) nil [4261 4269])
+            ("PATH_MAX" variable (:constant-flag t) nil [4401 4409])
+            ("PIPE_BUF" variable (:constant-flag t) nil [4453 4461])
+            ("BC_BASE_MAX" variable (:constant-flag t) nil [4517 4528])
+            ("BC_DIM_MAX" variable (:constant-flag t) nil [4582 4592])
+            ("BC_SCALE_MAX" variable (:constant-flag t) nil [4642 4654])
+            ("BC_STRING_MAX" variable (:constant-flag t) nil [4701 4714])
+            ("CHARCLASS_NAME_MAX" variable (:constant-flag t) nil [4769 4787])
+            ("COLL_WEIGHTS_MAX" variable (:constant-flag t) nil [4838 4854])
+            ("EQUIV_CLASS_MAX" variable (:constant-flag t) nil [4905 4920])
+            ("EXPR_NEST_MAX" variable (:constant-flag t) nil [4936 4949])
+            ("LINE_MAX" variable (:constant-flag t) nil [5005 5013])
+            ("RE_DUP_MAX" variable (:constant-flag t) nil [5062 5072])
+            ("NZERO" variable (:constant-flag t) nil [5145 5150]))          
+      :file "syslimits.h"
+      :pointmax 5533
+      :fsize 5532
+      :lastmodtime '(21776 25192 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GID_MAX" . ((symbol "2147483647U" 3732 . 3743)))
+          ("MAX_INPUT" . ((number "1024" 3969 . 3973)))
+          ("UID_MAX" . ((symbol "2147483647U" 4203 . 4214)))
+          ("BC_BASE_MAX" . ((number "99" 4533 . 4535)))
+          ("BC_STRING_MAX" . ((number "1000" 4717 . 4721)))
+          ("CHILD_MAX" . ((number "266" 3675 . 3678)))
+          ("BC_DIM_MAX" . ((number "2048" 4595 . 4599)))
+          ("BC_SCALE_MAX" . ((number "99" 4659 . 4661)))
+          ("EXPR_NEST_MAX" . ((number "32" 4954 . 4956)))
+          ("PIPE_BUF" . ((number "512" 4465 . 4468)))
+          ("CHARCLASS_NAME_MAX" . ((number "14" 4791 . 4793)))
+          ("LINE_MAX" . ((number "2048" 5016 . 5020)))
+          ("ARG_MAX" . ((semantic-list "(256 * 1024)" 3544 . 3556)))
+          ("MAX_CANON" . ((number "1024" 3903 . 3907)))
+          ("OPEN_MAX" . ((number "10240" 4271 . 4276)))
+          ("NAME_MAX" . ((number "255" 4028 . 4031)))
+          ("PATH_MAX" . ((number "1024" 4412 . 4416)))
+          ("EQUIV_CLASS_MAX" . ((number "2" 4926 . 4927)))
+          ("NZERO" . ((number "20" 5156 . 5158)))
+          ("_SYS_SYSLIMITS_H_")
+          ("LINK_MAX" . ((number "32767" 3851 . 3856)))
+          ("NGROUPS_MAX" . ((number "16" 4087 . 4089)))
+          ("COLL_WEIGHTS_MAX" . ((number "2" 4859 . 4860)))
+          ("RE_DUP_MAX" . ((number "255" 5076 . 5079)))
+          )
+))
+  :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.10.sdk!usr!include!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

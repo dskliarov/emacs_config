@@ -1,0 +1,46 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("include1/lib1.hh" include nil nil [1 28])
+            ("include2/lib2.hh" include nil nil [29 56])
+            ("feature1/feature1.hh" include nil nil [57 88])
+            ("iostream" include (:system-flag t) nil [89 108])
+            ("monetary.h" include (:system-flag t) nil [109 130])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [141 150])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151 164]))                  
+                :type "int")
+                nil [132 226]))          
+      :file "main.cpp"
+      :pointmax 226
+      :fsize 187
+      :lastmodtime '(21987 47985 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "lib2.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("lib2.h" include nil nil [1 18])
+            ("lib2_func" function (:type "void") nil [20 40])
+            ("lib2_func" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [56 62]))                  
+                :type "int")
+                nil [42 65]))          
+      :file "lib2.cpp"
+      :pointmax 66
+      :fsize 65
+      :lastmodtime '(21986 26395 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!dskliarov!cpp-projects!c-demo-project!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

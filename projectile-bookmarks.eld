@@ -1,1 +1,1 @@
-("~/erlang_projects/Qks_app/" "~/.emacs.d/" "~/cpp_projects/c-demo-project/" "~/cpp_projects/Test_cpp/" "~/erlang_projects/erlang-lua/")
+("~/cpp-projects/c-demo-project/" "~/.emacs.d/" "/usr/local/" "~/erlang_projects/cqrs/cqrs-with-erlang/" "~/erlang_projects/Logger/" "~/erlang_projects/Qks_app/" "~/cpp_projects/c-demo-project/" "~/cpp_projects/Test_cpp/" "~/erlang_projects/erlang-lua/")

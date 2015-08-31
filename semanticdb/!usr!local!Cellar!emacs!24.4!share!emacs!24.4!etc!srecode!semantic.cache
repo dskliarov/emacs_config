@@ -1,0 +1,235 @@
+;; Object srecode/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "srecode/"
+  :tables
+  (list
+    (semanticdb-table "default.srt"
+      :major-mode 'srecode-template-mode
+      :tags 
+        '( ("mode" variable (:default-value ("default")) nil [846 865])
+            ("comment_start" variable (:default-value ("#")) nil [866 889])
+            ("COPYRIGHT" variable (:default-value ("This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see http://www.gnu.org/licenses/.")) nil [890 1516])
+            ("DOLLAR" variable (:default-value ("$")) nil [1517 1532])
+            ("file" context nil nil [1533 1546])
+            ("copyright" function (:code "{{COPYRIGHT:srecode-comment-prefix}}
+") nil [1547 1613])
+            ("filecomment" function
+               (:code "{{comment_start}} {{FILENAME}} --- {{^}}
+{{comment_prefix}}
+{{comment_prefix}} Copyright (C) {{YEAR}} {{?AUTHOR}}
+{{comment_prefix}}
+{{comment_prefix}} Author: {{AUTHOR}} <{{EMAIL}}>{{#RCS}}
+{{comment_prefix}} X-RCS: {{DOLLAR}}Id{{DOLLAR}}{{/RCS}}
+{{comment_prefix}}
+{{>:copyright}}
+{{comment_end}}
+"
+                :arguments (":file" ":user" ":time"))
+                nil [1614 1962]))          
+      :file "default.srt"
+      :pointmax 1970
+      :fsize 1969
+      :lastmodtime '(21291 53104 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "template.srt"
+      :major-mode 'srecode-template-mode
+      :tags 
+        '( ("escape_start" variable (:default-value ("$")) nil [830 851])
+            ("escape_end" variable (:default-value ("$")) nil [851 870])
+            ("mode" variable (:default-value ("srecode-template-mode")) nil [870 903])
+            ("priority" variable (:default-value ("70")) nil [903 921])
+            ("comment_start" variable (:default-value (";;")) nil [922 946])
+            ("comment_end" variable (:default-value ("")) nil [946 968])
+            ("comment_prefix" variable (:default-value (";;")) nil [968 992])
+            ("SEPARATOR" variable (:default-value ("----")) nil [993 1014])
+            ("DOLLAR" variable (:default-value ("$")) nil [1015 1030])
+            ("file" context nil nil [1031 1044])
+            ("MAJORMODE" prompt
+               (:read srecode-read-major-mode-name
+                :text "Major Mode for templates: ")
+                nil [1045 1125])
+            ("START" prompt
+               (:default "{{"
+                :text "Escape Start Characters: ")
+                nil [1125 1179])
+            ("END" prompt
+               (:default "}}"
+                :text "Escape End Characters: ")
+                nil [1179 1229])
+            ("empty" function
+               (:code "$>:filecomment$
+
+set mode \"$?MAJORMODE$\"
+set escape_start \"$?START$\"
+set escape_end \"$?END$\"
+
+context file
+
+$^$
+
+
+;; end
+"
+                :documentation "Insert a skeleton for a template file."
+                :arguments (":file" ":user" ":time" ":srt"))
+                nil [1230 1440])
+            ("mode-basics" function
+               (:binding "m"
+                :dictionaries (("E" ("NAME" variable (:default-value ("empty :file :user :time")) (reparse-symbol flat-dictionary-entry) [1558 1593]) ("DOC" variable (:default-value ("Fill out an empty file.")) (reparse-symbol flat-dictionary-entry) [1593 1627]) ("KEY" variable (:default-value ("e")) (reparse-symbol flat-dictionary-entry) [1627 1639])) ("C1" ("NAME" variable (:default-value ("declaration")) (reparse-symbol flat-dictionary-entry) [1662 1685])) ("DTF" ("NAME" variable (:default-value ("function :blank :indent")) (reparse-symbol flat-dictionary-entry) [1709 1744]) ("DOC" variable (:default-value ("Template to declare a function.")) (reparse-symbol flat-dictionary-entry) [1744 1786]) ("KEY" variable (:default-value ("f")) (reparse-symbol flat-dictionary-entry) [1786 1798])) ("DTV" ("NAME" variable (:default-value ("variable :blank :indent")) (reparse-symbol flat-dictionary-entry) [1822 1857]) ("DOC" variable (:default-value ("Template to declare a variable.")) (reparse-symbol flat-dictionary-entry) [1857 1899]) ("KEY" variable (:default-value ("v")) (reparse-symbol flat-dictionary-entry) [1899 1911])) ("PR" ("NAME" variable (:default-value ("NAME")) (reparse-symbol flat-dictionary-entry) [1934 1950]) ("PROMPT" variable (:default-value ("Name for declaration: ")) (reparse-symbol flat-dictionary-entry) [1950 1986])))
+                :code "$>:declaration:commentchars$
+
+$<E:declaration:function$
+$ESCAPE_START$>:filecomment$ESCAPE_END$
+$/E$
+
+$>C1:declaration:context$
+
+$>PR:declaration:prompt$
+
+$>DTF:declaration:function$
+$>DTV:declaration:function$
+"
+                :documentation "Fill out a full template including parts for basic new mode stuff."
+                :arguments (":srt"))
+                nil [1441 2216])
+            ("declaration" context nil nil [2218 2238])
+            ("NAME" prompt (:text "Name of new template: ") nil [2239 2276])
+            ("KEY" prompt
+               (:read read-char
+                :text "Key Binding: ")
+                nil [2276 2318])
+            ("function" function
+               (:binding "f"
+                :code "template $?NAME$$#ARG$$NAME$$/ARG$
+\"$DOC$\"
+$SEPARATOR$
+$^$
+$SEPARATOR$
+bind \"$?KEY$\"
+"
+                :documentation "Insert a template block for Srecoder templates."
+                :arguments (":blank"))
+                nil [2319 2498])
+            ("NAME" prompt (:text "Name of new variable: ") nil [2499 2536])
+            ("variable" function
+               (:binding "v"
+                :code "set $?NAME$ \"$^$\"
+"
+                :documentation "Inert a variable."
+                :arguments (":blank"))
+                nil [2537 2619])
+            ("prompt" function
+               (:binding "p"
+                :code "prompt $?NAME$ \"$?PROMPT$\"
+"
+                :documentation "Insert a prompt."
+                :arguments (":blank"))
+                nil [2620 2708])
+            ("priority" function
+               (:code "set priority $^$
+"
+                :documentation "Insert a priority statement."
+                :arguments (":blank"))
+                nil [2709 2792])
+            ("application" function
+               (:code "set application \"$^$\"
+"
+                :documentation "Insert an application statement."
+                :arguments (":blank"))
+                nil [2793 2888])
+            ("context" function
+               (:binding "c"
+                :code "context $NAME$
+"
+                :documentation "Insert a context statement."
+                :arguments (":blank"))
+                nil [2889 2977])
+            ("commentchars" function
+               (:code "set comment_start  \"\"
+set comment_end    \"\"
+set comment_prefix \"\"
+"
+                :documentation "Insert the variables for handling comments."
+                :arguments (":blank"))
+                nil [2978 3129])
+            ("code" context nil nil [3130 3143])
+            ("NAME" prompt
+               (:read srecode-read-variable-name
+                :text "Name of variable: ")
+                nil [3144 3209])
+            ("variable" function
+               (:binding "v"
+                :code "$ESCAPE_START$$?NAME$$ESCAPE_END$
+"
+                :documentation "Insert a variable with completion from the current file."
+                :arguments (":srt"))
+                nil [3210 3345])
+            ("NAME" prompt (:text "Name of macro: ") nil [3346 3376])
+            ("ask" function
+               (:binding "a"
+                :code "$ESCAPE_START$?$?NAME$$ESCAPE_END$
+"
+                :documentation "Insert a prompting variable."
+                :arguments (":srt"))
+                nil [3377 3480])
+            ("comment" function
+               (:binding "c"
+                :code "$ESCAPE_START$!$^$$ESCAPE_END$
+"
+                :arguments (":srt"))
+                nil [3481 3553])
+            ("TEMPLATE" prompt
+               (:read srecode-read-template-name
+                :text "Template to include: ")
+                nil [3554 3626])
+            ("include" function
+               (:binding "i"
+                :code "$ESCAPE_START$>:$?TEMPLATE$$ESCAPE_END$
+"
+                :arguments (":srt"))
+                nil [3627 3708])
+            ("includewrap" function
+               (:binding "w"
+                :code "$ESCAPE_START$<:$?TEMPLATE$$ESCAPE_END$$^$$ESCAPE_START$/$NAME$$ESCAPE_END$
+"
+                :arguments (":srt"))
+                nil [3709 3830])
+            ("point" function
+               (:binding "p"
+                :code "$ESCAPE_START$^$ESCAPE_END$
+"
+                :arguments (":srt"))
+                nil [3831 3898])
+            ("escape-start-quoted" function
+               (:binding "q"
+                :code "$ESCAPE_START$ESCAPE_START$ESCAPE_END$
+"
+                :documentation "Escape Start"
+                :arguments (":srt"))
+                nil [4056 4163])
+            ("escape-end-quoted" function
+               (:binding "e"
+                :code "$ESCAPE_START$ESCAPE_END$ESCAPE_END$
+"
+                :documentation "Escape Start"
+                :arguments (":srt"))
+                nil [4164 4267]))          
+      :file "template.srt"
+      :pointmax 4276
+      :fsize 4275
+      :lastmodtime '(21291 53104 0 0)
+      :unmatched-syntax '((string 4051 . 4054) (BIND 4046 . 4050) (TEMPLATE_BLOCK 3968 . 4041) (string 3921 . 3962) (property 3916 . 3920) (newline 3898 . 3899) (TEMPLATE 3899 . 3907) (SECTION 3908 . 3915))))
+  :file "!usr!local!Cellar!emacs!24.4!share!emacs!24.4!etc!srecode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

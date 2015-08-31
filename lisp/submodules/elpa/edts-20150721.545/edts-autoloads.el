@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "edts-mode" "edts-mode.el" (21980 57354 0 0))
+;;;### (autoloads nil "edts-mode" "edts-mode.el" (21986 15052 0 0))
 ;;; Generated autoloads from edts-mode.el
 
 (eval-and-compile (add-to-list 'load-path (file-name-as-directory (expand-file-name "elisp/edts" (file-name-directory (or load-file-name byte-compile-current-file))))))
@@ -52,8 +52,8 @@ further.
 
 ;;;***
 
-;;;### (autoloads nil nil ("edts-pkg.el" "edts-start.el") (21980
-;;;;;;  57354 426160 0))
+;;;### (autoloads nil nil ("edts-pkg.el" "edts-start.el") (21986
+;;;;;;  15052 258610 0))
 
 ;;;***
 

@@ -25,13 +25,16 @@
   '(ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1))
   '(ecb-source-path
     (quote
- 	("~/erlang_projects/redesign/Phoenix" "~/erlang_projects/qks" "~/erlang_projects/Qks_app")))
+    ("~/erlang_projects/")))
   '(ecb-tip-of-the-day nil)
   '(ecb-tree-buffer-style (quote image))
   '(ede-project-directories
     (quote
  	("/Users/dskliarov/cpp_projects/cppl/include" "/Users/dskliarov/cpp_projects/cppl/src" "/Users/dskliarov/cpp_projects/cppl")))
   '(edts-man-root "/Users/dskliarov/.emacs.d/edts/doc/17.0"))
+
+(semantic-add-system-include "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/" 'c++-mode)
+(semantic-add-system-include "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/c++/4.2.1/" 'c++-mode)
 
  (custom-set-faces
   ;; custom-set-faces was added by Custom.

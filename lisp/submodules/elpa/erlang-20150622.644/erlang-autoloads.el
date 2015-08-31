@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "erlang" "erlang.el" (21979 20508 0 0))
+;;;### (autoloads nil "erlang" "erlang.el" (21986 15016 0 0))
 ;;; Generated autoloads from erlang.el
 
 (autoload 'erlang-mode "erlang" "\
@@ -31,7 +31,7 @@ useful commands:
      C-c C-q - Indent current function.
      M-;     - Create a comment at the end of the line.
      M-q     - Fill a comment, i.e. wrap lines so that they (hopefully)
-		 will look better.
+         will look better.
      M-a     - Goto the beginning of an Erlang clause.
      M-C-a   - Ditto for function.
      M-e     - Goto the end of an Erlang clause.
@@ -118,7 +118,7 @@ editing control characters:
 
 ;;;***
 
-;;;### (autoloads nil "erlang-start" "erlang-start.el" (21979 20508
+;;;### (autoloads nil "erlang-start" "erlang-start.el" (21986 15016
 ;;;;;;  0 0))
 ;;; Generated autoloads from erlang-start.el
 
@@ -132,7 +132,7 @@ editing control characters:
 
 ;;;### (autoloads nil nil ("erlang-eunit.el" "erlang-flymake.el"
 ;;;;;;  "erlang-pkg.el" "erlang-skels-old.el" "erlang-skels.el" "erlang_appwiz.el")
-;;;;;;  (21979 20508 849762 0))
+;;;;;;  (21986 15016 472026 0))
 
 ;;;***
 
