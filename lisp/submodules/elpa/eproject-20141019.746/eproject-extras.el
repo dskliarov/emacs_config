@@ -32,7 +32,7 @@
 
 (require 'eproject)
 (require 'cl)
-(require 'iswitchb)
+;;(require 'iswitchb)
 (require 'ibuffer)
 (require 'ibuf-ext)
 

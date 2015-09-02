@@ -1,0 +1,89 @@
+;; Object schemas/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "schemas/"
+  :tables
+  (list
+    (semanticdb-table "key-list.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key-list.json"
+      :pointmax 114
+      :fsize 113
+      :lastmodtime '(21960 44505 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "key.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key.json"
+      :pointmax 644
+      :fsize 643
+      :lastmodtime '(21960 44505 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "key-rotation-list.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key-rotation-list.json"
+      :pointmax 129
+      :fsize 128
+      :lastmodtime '(21960 44505 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "key-rotation-create.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key-rotation-create.json"
+      :pointmax 190
+      :fsize 189
+      :lastmodtime '(21960 44505 0 0)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "key-archived.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key-archived.json"
+      :pointmax 714
+      :fsize 713
+      :lastmodtime '(21988 31876 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "key-archived-metadata.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key-archived-metadata.json"
+      :pointmax 345
+      :fsize 344
+      :lastmodtime '(21988 31169 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "key-id.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key-id.json"
+      :pointmax 112
+      :fsize 111
+      :lastmodtime '(21960 44505 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "key-archived-success.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key-archived-success.json"
+      :pointmax 183
+      :fsize 182
+      :lastmodtime '(21988 37749 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "key-archived-notfound.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "key-archived-notfound.json"
+      :pointmax 173
+      :fsize 172
+      :lastmodtime '(21988 37934 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "general-message.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "general-message.json"
+      :pointmax 192
+      :fsize 191
+      :lastmodtime '(21960 44505 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!dskliarov!erlang_projects!qks-spec!schemas!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

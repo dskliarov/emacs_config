@@ -1,0 +1,208 @@
+;; Object qks-spec/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "qks-spec/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("default" function nil nil [1 154]))          
+      :file "Makefile"
+      :pointmax 154
+      :fsize 153
+      :lastmodtime '(21988 36518 0 0)
+      :unmatched-syntax '((shell-command 116 . 153) (bol 115 . 115) (shell-command 116 . 153) (bol 115 . 115) (shell-command 116 . 144) (bol 115 . 115) (shell-command 116 . 141) (bol 115 . 115) (shell-command 116 . 126) (bol 115 . 115) (shell-command 116 . 120) (bol 115 . 115) (shell-command 79 . 114) (bol 78 . 78)))
+    (semanticdb-table "archive.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Archive Operations API documentation" section nil nil [28 490])
+            ("$(document).ready(function() {
+        $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+
+        $('[data-toggle]').click(function() {
+          var selector = $(this).data('target') + ' pre code';
+          $(selector).each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+
+        // open modal on hashes like #_action_get
+        $(window).bind('hashchange', function(e) {
+          var anchor_id = document.location.hash.substr(1); //strip #
+          var element = $('#' + anchor_id);
+
+          // do we have such element + is it a modal?  --> show it
+          if (element.length && element.hasClass('modal')) {
+            element.modal('show');
+          }
+        });
+
+        // execute hashchange on first page load
+        $(window).trigger('hashchange');
+
+        // remove url fragment on modal hide
+        $('.modal').on('hidden.bs.modal', function() {
+          if(history && history.replaceState) {
+            history.replaceState({}, '', '#');
+          }
+        });
+      });" section nil nil [490 581])
+            ("$(document).ready(function() {
+        $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+
+        $('[data-toggle]').click(function() {
+          var selector = $(this).data('target') + ' pre code';
+          $(selector).each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+
+        // open modal on hashes like #_action_get
+        $(window).bind('hashchange', function(e) {
+          var anchor_id = document.location.hash.substr(1); //strip #
+          var element = $('#' + anchor_id);
+
+          // do we have such element + is it a modal?  --> show it
+          if (element.length && element.hasClass('modal')) {
+            element.modal('show');
+          }
+        });
+
+        // execute hashchange on first page load
+        $(window).trigger('hashchange');
+
+        // remove url fragment on modal hide
+        $('.modal').on('hidden.bs.modal', function() {
+          if(history && history.replaceState) {
+            history.replaceState({}, '', '#');
+          }
+        });
+      });" section nil nil [581 695])
+            ("$(document).ready(function() {
+        $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+
+        $('[data-toggle]').click(function() {
+          var selector = $(this).data('target') + ' pre code';
+          $(selector).each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+
+        // open modal on hashes like #_action_get
+        $(window).bind('hashchange', function(e) {
+          var anchor_id = document.location.hash.substr(1); //strip #
+          var element = $('#' + anchor_id);
+
+          // do we have such element + is it a modal?  --> show it
+          if (element.length && element.hasClass('modal')) {
+            element.modal('show');
+          }
+        });
+
+        // execute hashchange on first page load
+        $(window).trigger('hashchange');
+
+        // remove url fragment on modal hide
+        $('.modal').on('hidden.bs.modal', function() {
+          if(history && history.replaceState) {
+            history.replaceState({}, '', '#');
+          }
+        });
+      });" section nil nil [695 814])
+            ("$(document).ready(function() {
+        $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+
+        $('[data-toggle]').click(function() {
+          var selector = $(this).data('target') + ' pre code';
+          $(selector).each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+
+        // open modal on hashes like #_action_get
+        $(window).bind('hashchange', function(e) {
+          var anchor_id = document.location.hash.substr(1); //strip #
+          var element = $('#' + anchor_id);
+
+          // do we have such element + is it a modal?  --> show it
+          if (element.length && element.hasClass('modal')) {
+            element.modal('show');
+          }
+        });
+
+        // execute hashchange on first page load
+        $(window).trigger('hashchange');
+
+        // remove url fragment on modal hide
+        $('.modal').on('hidden.bs.modal', function() {
+          if(history && history.replaceState) {
+            history.replaceState({}, '', '#');
+          }
+        });
+      });" section nil nil [814 4513])
+            ("Archive Operations API documentation <small>version 1" section (:members 
+              ( ("Archive Operations API documentation <small>version 1" section (:members 
+                  ( ("Archive Overview" section (:members 
+                      ( ("Archive Overview" anchor nil nil [4762 4765]))                      ) nil [4736 4815])
+                    ("Nav" section (:members 
+                      ( ("Main Page" anchor nil nil [4844 4847])
+                        ("Crypto Operations API" anchor nil nil [4886 4889])
+                        ("Admin Operations API" anchor nil nil [4942 4945])
+                        ("Archive Operations API" anchor nil nil [4996 4999])
+                        ("Colossus Test" anchor nil nil [5265 5268])
+                        ("Colossus Beta" anchor nil nil [5335 5338])
+                        ("Colossus Prod" anchor nil nil [5405 5408]))                      ) nil [4815 5538])
+                    ("Keys archive" section (:members 
+                      ( ("/archive/keys" section (:members 
+                          ( ("get" anchor nil nil [5974 5977]))                          ) nil [5811 6659])
+                        ("get" section (:members 
+                          ( ("Request" anchor nil nil [6942 6945])
+                            ("Response" anchor nil nil [7016 7019]))                          ) nil [6659 7177]))                      ) nil [5538 7177])
+                    ("Headers" section nil nil [7177 7533])
+                    ("HTTP status code <a href=\"http://httpstatus.es/200\" target=\"_blank\">200" section (:members 
+                      ( ("200" anchor nil nil [7554 7557])
+                        ("Body" section nil nil [7673 8284]))                      ) nil [7533 8284])
+                    ("HTTP status code <a href=\"http://httpstatus.es/500\" target=\"_blank\">500" section (:members 
+                      ( ("500" anchor nil nil [8305 8308])
+                        ("Body" section (:members 
+                          ( ("/archive/keys" section (:members 
+                              ( ("get" anchor nil nil [9086 9089]))                              ) nil [8907 9881])
+                            ("get" section (:members 
+                              ( ("Request" anchor nil nil [10156 10159])
+                                ("Response" anchor nil nil [10238 10241]))                              ) nil [9881 10415]))                          ) nil [8395 10415])
+                        ("URI Parameters" section nil nil [10415 10531])
+                        ("Headers" section nil nil [10531 10895]))                      ) nil [8284 10895])
+                    ("HTTP status code <a href=\"http://httpstatus.es/200\" target=\"_blank\">200" section (:members 
+                      ( ("200" anchor nil nil [10916 10919])
+                        ("Body" section nil nil [11127 12864]))                      ) nil [10895 12864])
+                    ("HTTP status code <a href=\"http://httpstatus.es/404\" target=\"_blank\">404" section (:members 
+                      ( ("404" anchor nil nil [12885 12888])
+                        ("Body" section nil nil [12974 13376]))                      ) nil [12864 13376])
+                    ("HTTP status code <a href=\"http://httpstatus.es/500\" target=\"_blank\">500" section (:members 
+                      ( ("500" anchor nil nil [13397 13400])
+                        ("Body" section (:members 
+                          ( ("Keys archive" anchor nil nil [14095 14098]))                          ) nil [13487 14183]))                      ) nil [13376 14183]))                  ) nil [4659 14183]))              ) nil [4513 14183]))          
+      :file "archive.html"
+      :pointmax 14183
+      :fsize 14182
+      :lastmodtime '(21988 42088 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "admin.html"
+      :major-mode 'html-mode
+      :tags nil
+      :file "admin.html"
+      :pointmax 148
+      :fsize 39185
+      :lastmodtime '(21988 42087 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!dskliarov!erlang_projects!qks-spec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

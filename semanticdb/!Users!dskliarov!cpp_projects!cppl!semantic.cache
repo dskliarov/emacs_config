@@ -1,0 +1,30 @@
+;; Object cppl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cppl/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("CC" variable (:default-value ("g++")) nil [95 133])
+            ("SRCDIR" variable (:default-value ("src")) nil [207 221])
+            ("BUILDDIR" variable (:default-value ("build")) nil [221 239])
+            ("TARGET" variable (:default-value ("bin/runner")) nil [239 260])
+            ("SRCEXT" variable (:default-value ("cpp")) nil [261 275])
+            ("SOURCES" variable (:default-value ("$(shell find $(SRCDIR) -type f -name *.$(SRCEXT))")) nil [275 336])
+            ("OBJECTS" variable (:default-value ("$(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))")) nil [336 410])
+            ("CFLAGS" variable (:default-value ("-g")) nil [410 431])
+            ("LIB" variable (:default-value ("\"\"")) nil [431 531])
+            ("$(TARGET)" function (:arguments ("$(OBJECTS)")) nil [550 662])
+            ("$(BUILDDIR)" function (:arguments ("$(SRCDIR)/%.$(SRCEXT)")) nil [663 806])
+            ("clean" function nil nil [807 910])
+            ("tester" function nil nil [919 988])
+            ("ticket" function nil nil [998 1069]))          
+      :file "Makefile"
+      :pointmax 1084
+      :fsize 1083
+      :lastmodtime '(21991 3639 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!dskliarov!cpp_projects!cppl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

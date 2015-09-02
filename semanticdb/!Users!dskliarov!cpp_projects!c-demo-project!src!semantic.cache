@@ -1,0 +1,30 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("lib1.h" include nil nil [1 18])
+            ("lib2.h" include nil nil [19 36])
+            ("feature1/feature1.h" include nil nil [37 67])
+            ("iostream" include (:system-flag t) nil [68 87])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [98 107])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108 121]))                  
+                :type "int")
+                nil [89 154]))          
+      :file "main.cpp"
+      :pointmax 155
+      :fsize 189
+      :lastmodtime '(21988 17364 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!dskliarov!cpp_projects!c-demo-project!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

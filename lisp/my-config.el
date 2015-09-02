@@ -149,8 +149,18 @@
 (require 'elixir-yasnippets)
 (require 'lacarte)
 (require 'restclient)
+(alchemist-mode t)
+(require 'elixir-custom)
 (nyan-mode 1)
-
+(setq load-path (cons (expand-file-name "/usr/local/Cellar/cmake/3.1.3/share/cmake/editors/emacs") load-path))
+;; (require 'cmake-mode)
+;; (setq auto-mode-alist
+;;       (append
+;;        '(("CMakeLists\\.txt\\'" . cmake-mode))
+;;        '(("\\.cmake\\'" . cmake-mode))
+;;        auto-mode-alist))
+;; (autoload 'cmake-mode "/usr/local/Cellar/cmake/3.1.3/share/cmake/editors/emacs/cmake-mode.el" t)
+(add-to-list 'auto-mode-alist '("[Mm]akefile\\'" . makefile-gmake-mode))
 (setq custom-file "./emacs-custom.el")
 (load custom-file)
 (provide 'my-config)
