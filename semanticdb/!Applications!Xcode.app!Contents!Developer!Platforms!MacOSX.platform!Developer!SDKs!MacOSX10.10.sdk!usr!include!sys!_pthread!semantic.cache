@@ -201,7 +201,7 @@
       :file "_pthread_types.h"
       :pointmax 3860
       :fsize 3859
-      :lastmodtime '(21550 12826 0 0)
+      :lastmodtime '(21519 26812 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__PTHREAD_CONDATTR_SIZE__" . ((number "8" 1640 . 1641)))
@@ -214,6 +214,23 @@
           ("__PTHREAD_RWLOCK_SIZE__" . ((number "192" 1742 . 1745)))
           ("__PTHREAD_ATTR_SIZE__" . ((number "56" 1531 . 1533)))
           ("__PTHREAD_ONCE_SIZE__" . ((number "8" 1707 . 1708)))
+          )
+)
+    (semanticdb-table "_pthread_attr_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_PTHREAD_ATTR_T" variable (:constant-flag t) nil [1363 1378])
+            ("pthread_attr_t" type
+               (:typedef ("__darwin_pthread_attr_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1380 1427]))          
+      :file "_pthread_attr_t.h"
+      :pointmax 1458
+      :fsize 1457
+      :lastmodtime '(21519 26811 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_PTHREAD_ATTR_T")
           )
 ))
   :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.10.sdk!usr!include!sys!_pthread!semantic.cache"

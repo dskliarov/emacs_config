@@ -6379,7 +6379,32 @@
       :lexical-table 
         '(("_NEW")
           )
-))
+)
+    (semanticdb-table "vector"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_VECTOR" variable (:constant-flag t) nil [2625 2640])
+            ("bits/functexcept.h" include (:system-flag t) nil [2671 2700])
+            ("bits/stl_algobase.h" include (:system-flag t) nil [2701 2731])
+            ("bits/allocator.h" include (:system-flag t) nil [2732 2759])
+            ("bits/stl_construct.h" include (:system-flag t) nil [2760 2791])
+            ("bits/stl_uninitialized.h" include (:system-flag t) nil [2792 2827])
+            ("bits/stl_vector.h" include (:system-flag t) nil [2828 2856])
+            ("bits/stl_bvector.h" include (:system-flag t) nil [2857 2886])
+            ("bits/vector.tcc" include (:system-flag t) nil [2922 2949]))          
+      :file "vector"
+      :pointmax 3043
+      :fsize 3042
+      :lastmodtime '(21519 27093 0 0)
+      :unmatched-syntax '((symbol 2656 . 2669) (symbol 2652 . 2655) (symbol 2645 . 2651) (punctuation 2644 . 2645))
+      :lexical-table 
+        '(("_GLIBCXX_VECTOR" . ((number "1" 2641 . 2642)))
+          )
+)
+    (semanticdb-table "numeric"
+      :file "numeric"
+      :fsize 2832
+      :lastmodtime '(21519 27093 0 0)))
   :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.10.sdk!usr!include!c++!4.2.1!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

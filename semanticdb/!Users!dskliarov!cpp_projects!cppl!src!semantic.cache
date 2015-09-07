@@ -7,22 +7,47 @@
       :major-mode 'c++-mode
       :tags 
         '( ("iostream" include (:system-flag t) nil [23 42])
-            ("../include/myproj.hh" include nil nil [43 74])
-            ("main" function (:type "int") nil [76 151]))          
+            ("stdlib.h" include (:system-flag t) nil [43 62])
+            ("numeric" include (:system-flag t) nil [63 81])
+            ("vector" include (:system-flag t) nil [82 99])
+            ("../include/myproj.hh" include nil nil [100 131])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [132 152])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [162 167]))                  
+                :type "int")
+                nil [153 1363]))          
       :file "main.cpp"
-      :pointmax 220
-      :fsize 219
-      :lastmodtime '(21991 5597 0 0)
+      :pointmax 1432
+      :fsize 1431
+      :lastmodtime '(21993 2562 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "mylib.cpp"
       :major-mode 'c++-mode
       :tags 
-        '( ("my_lib_function" function (:type "int") nil [54 97]))          
+        '( ("vector" include (:system-flag t) nil [53 70])
+            ("utility" include (:system-flag t) nil [71 89])
+            ("my_lib_function" function (:type "int") nil [91 134])
+            ("insertion_sort" function
+               (:arguments 
+                  ( ("ar" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [156 174]))                  
+                :type "void")
+                nil [136 463]))          
       :file "mylib.cpp"
-      :pointmax 98
-      :fsize 97
-      :lastmodtime '(21991 797 0 0)
-      :unmatched-syntax nil))
+      :pointmax 465
+      :fsize 464
+      :lastmodtime '(21996 59354 0 0)
+      :unmatched-syntax '((symbol 141 . 150) (VOID 136 . 140))))
   :file "!Users!dskliarov!cpp_projects!cppl!src!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

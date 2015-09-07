@@ -14,7 +14,7 @@
       :file "_gid_t.h"
       :pointmax 1401
       :fsize 1400
-      :lastmodtime '(21776 25158 0 0)
+      :lastmodtime '(21531 55883 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_GID_T")
@@ -31,7 +31,7 @@
       :file "_intptr_t.h"
       :pointmax 1425
       :fsize 1424
-      :lastmodtime '(21776 25160 0 0)
+      :lastmodtime '(21531 55884 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_INTPTR_T")
@@ -48,7 +48,7 @@
       :file "_off_t.h"
       :pointmax 1414
       :fsize 1413
-      :lastmodtime '(21776 25161 0 0)
+      :lastmodtime '(21531 55885 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_OFF_T")
@@ -65,7 +65,7 @@
       :file "_pid_t.h"
       :pointmax 1421
       :fsize 1420
-      :lastmodtime '(21776 25162 0 0)
+      :lastmodtime '(21531 55885 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_PID_T")
@@ -82,7 +82,7 @@
       :file "_size_t.h"
       :pointmax 1426
       :fsize 1425
-      :lastmodtime '(21776 25164 0 0)
+      :lastmodtime '(21531 55886 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SIZE_T")
@@ -99,7 +99,7 @@
       :file "_ssize_t.h"
       :pointmax 1431
       :fsize 1430
-      :lastmodtime '(21776 25164 0 0)
+      :lastmodtime '(21531 55886 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SSIZE_T")
@@ -116,7 +116,7 @@
       :file "_uid_t.h"
       :pointmax 1421
       :fsize 1420
-      :lastmodtime '(21776 25165 0 0)
+      :lastmodtime '(21531 55887 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_UID_T")
@@ -133,7 +133,7 @@
       :file "_useconds_t.h"
       :pointmax 1435
       :fsize 1434
-      :lastmodtime '(21776 25165 0 0)
+      :lastmodtime '(21531 55887 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_USECONDS_T")
@@ -146,7 +146,7 @@
       :file "_null.h"
       :pointmax 1391
       :fsize 1390
-      :lastmodtime '(21776 25161 0 0)
+      :lastmodtime '(21531 55884 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("NULL" . ((symbol "__DARWIN_NULL" 1358 . 1371)))
@@ -163,7 +163,7 @@
       :file "_dev_t.h"
       :pointmax 1441
       :fsize 1440
-      :lastmodtime '(21776 25156 0 0)
+      :lastmodtime '(21531 55881 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_DEV_T")
@@ -180,7 +180,7 @@
       :file "_mode_t.h"
       :pointmax 1419
       :fsize 1418
-      :lastmodtime '(21776 25161 0 0)
+      :lastmodtime '(21531 55884 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_MODE_T")
@@ -197,7 +197,7 @@
       :file "_uuid_t.h"
       :pointmax 1415
       :fsize 1414
-      :lastmodtime '(21776 25165 0 0)
+      :lastmodtime '(21531 55887 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_UUID_T")
@@ -216,7 +216,7 @@
       :file "_timespec.h"
       :pointmax 1499
       :fsize 1498
-      :lastmodtime '(21776 25164 0 0)
+      :lastmodtime '(21531 55887 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_STRUCT_TIMESPEC" . ((STRUCT "struct" 1380 . 1386) (symbol "timespec" 1387 . 1395)))
@@ -233,7 +233,7 @@
       :file "_va_list.h"
       :pointmax 1422
       :fsize 1421
-      :lastmodtime '(21776 25165 0 0)
+      :lastmodtime '(21531 55887 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_VA_LIST_T")
@@ -246,7 +246,7 @@
       :file "_posix_vdisable.h"
       :pointmax 1431
       :fsize 1430
-      :lastmodtime '(21776 25162 0 0)
+      :lastmodtime '(21531 55885 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_POSIX_VDISABLE" . ((semantic-list "((unsigned char)'\\377')" 1379 . 1402)))
@@ -261,7 +261,7 @@
       :file "_seek_set.h"
       :pointmax 1579
       :fsize 1578
-      :lastmodtime '(21776 25163 0 0)
+      :lastmodtime '(21531 55886 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("SEEK_CUR" . ((number "1" 1449 . 1450)))
@@ -313,7 +313,7 @@
       :file "_fd_def.h"
       :pointmax 3209
       :fsize 3208
-      :lastmodtime '(21776 25157 0 0)
+      :lastmodtime '(21531 55882 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__DARWIN_FD_CLR" (spp-arg-list ("n" "p") 2581 . 2587) . 
@@ -343,7 +343,7 @@
       :file "_timeval.h"
       :pointmax 1563
       :fsize 1562
-      :lastmodtime '(21776 25164 0 0)
+      :lastmodtime '(21531 55887 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_STRUCT_TIMEVAL" . ((STRUCT "struct" 1379 . 1385) (symbol "timeval" 1386 . 1393)))
@@ -360,7 +360,7 @@
       :file "_time_t.h"
       :pointmax 1420
       :fsize 1419
-      :lastmodtime '(21776 25164 0 0)
+      :lastmodtime '(21531 55886 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_TIME_T")
@@ -377,7 +377,7 @@
       :file "_suseconds_t.h"
       :pointmax 1443
       :fsize 1442
-      :lastmodtime '(21776 25164 0 0)
+      :lastmodtime '(21531 55886 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SUSECONDS_T")
@@ -394,7 +394,7 @@
       :file "_sigset_t.h"
       :pointmax 1429
       :fsize 1428
-      :lastmodtime '(21776 25163 0 0)
+      :lastmodtime '(21531 55886 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SIGSET_T")
@@ -407,7 +407,7 @@
       :file "_fd_setsize.h"
       :pointmax 1412
       :fsize 1411
-      :lastmodtime '(21776 25158 0 0)
+      :lastmodtime '(21531 55882 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("FD_SETSIZE" . ((symbol "__DARWIN_FD_SETSIZE" 1368 . 1387)))
@@ -420,7 +420,7 @@
       :file "_fd_set.h"
       :pointmax 1408
       :fsize 1407
-      :lastmodtime '(21776 25157 0 0)
+      :lastmodtime '(21531 55882 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("FD_SET" (spp-arg-list ("n" "p") 1359 . 1365) . ((symbol "__DARWIN_FD_SET" 1366 . 1381) (semantic-list "(n, p)" 1381 . 1387)))
@@ -433,7 +433,7 @@
       :file "_fd_clr.h"
       :pointmax 1408
       :fsize 1407
-      :lastmodtime '(21776 25157 0 0)
+      :lastmodtime '(21531 55881 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("FD_CLR" (spp-arg-list ("n" "p") 1359 . 1365) . ((symbol "__DARWIN_FD_CLR" 1366 . 1381) (semantic-list "(n, p)" 1381 . 1387)))
@@ -446,7 +446,7 @@
       :file "_fd_isset.h"
       :pointmax 1416
       :fsize 1415
-      :lastmodtime '(21776 25157 0 0)
+      :lastmodtime '(21531 55882 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("FD_ISSET" (spp-arg-list ("n" "p") 1363 . 1369) . ((symbol "__DARWIN_FD_ISSET" 1370 . 1387) (semantic-list "(n, p)" 1387 . 1393)))
@@ -459,7 +459,7 @@
       :file "_fd_zero.h"
       :pointmax 1406
       :fsize 1405
-      :lastmodtime '(21776 25158 0 0)
+      :lastmodtime '(21531 55882 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("FD_ZERO" (spp-arg-list ("p") 1361 . 1364) . ((symbol "__DARWIN_FD_ZERO" 1365 . 1381) (semantic-list "(p)" 1381 . 1384)))
@@ -472,7 +472,7 @@
       :file "_fd_copy.h"
       :pointmax 1412
       :fsize 1411
-      :lastmodtime '(21776 25157 0 0)
+      :lastmodtime '(21531 55881 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("FD_COPY" (spp-arg-list ("f" "t") 1361 . 1367) . ((symbol "__DARWIN_FD_COPY" 1368 . 1384) (semantic-list "(f, t)" 1384 . 1390)))
@@ -489,7 +489,7 @@
       :file "_rsize_t.h"
       :pointmax 1427
       :fsize 1426
-      :lastmodtime '(21776 25162 0 0)
+      :lastmodtime '(21531 55885 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_RSIZE_T")
@@ -506,7 +506,7 @@
       :file "_errno_t.h"
       :pointmax 1427
       :fsize 1426
-      :lastmodtime '(21776 25156 0 0)
+      :lastmodtime '(21531 55881 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_ERRNO_T")
@@ -519,7 +519,7 @@
       :file "_offsetof.h"
       :pointmax 1423
       :fsize 1422
-      :lastmodtime '(21776 25162 0 0)
+      :lastmodtime '(21531 55885 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("offsetof" (spp-arg-list ("type" "field") 1363 . 1376) . ((symbol "__offsetof" 1377 . 1387) (semantic-list "(type, field)" 1387 . 1400)))
@@ -536,7 +536,7 @@
       :file "_ptrdiff_t.h"
       :pointmax 1426
       :fsize 1425
-      :lastmodtime '(21776 25162 0 0)
+      :lastmodtime '(21531 55885 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_PTRDIFF_T")
@@ -548,7 +548,7 @@
       :file "_wchar_t.h"
       :pointmax 1501
       :fsize 1500
-      :lastmodtime '(21776 25166 0 0)
+      :lastmodtime '(21531 55888 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "_wint_t.h"
       :major-mode 'c-mode
@@ -561,7 +561,7 @@
       :file "_wint_t.h"
       :pointmax 1411
       :fsize 1410
-      :lastmodtime '(21776 25166 0 0)
+      :lastmodtime '(21531 55888 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_WINT_T")
@@ -578,7 +578,7 @@
       :file "_ct_rune_t.h"
       :pointmax 1426
       :fsize 1425
-      :lastmodtime '(21776 25156 0 0)
+      :lastmodtime '(21531 55881 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_CT_RUNE_T")
@@ -595,7 +595,7 @@
       :file "_rune_t.h"
       :pointmax 1413
       :fsize 1412
-      :lastmodtime '(21776 25163 0 0)
+      :lastmodtime '(21531 55886 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_RUNE_T")
@@ -612,10 +612,181 @@
       :file "_clock_t.h"
       :pointmax 1427
       :fsize 1426
-      :lastmodtime '(21776 25156 0 0)
+      :lastmodtime '(21531 55881 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_CLOCK_T")
+          )
+)
+    (semanticdb-table "_id_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_ID_T" variable (:constant-flag t) nil [1353 1358])
+            ("id_t" type
+               (:typedef ("__darwin_id_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1360 1387]))          
+      :file "_id_t.h"
+      :pointmax 1446
+      :fsize 1445
+      :lastmodtime '(21531 55883 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_ID_T")
+          )
+)
+    (semanticdb-table "_sigaltstack.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_STRUCT_SIGALTSTACK" variable (:constant-flag t) nil [1429 1448])
+            ("__darwin_sigaltstack" type
+               (:members 
+                  ( ("ss_sp" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1605 1628])
+                    ("ss_size" variable (:type ("__darwin_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1662 1686])
+                    ("ss_flags" variable (:type "int") (reparse-symbol classsubparts) [1721 1746]))                  
+                :type "struct")
+                nil [1582 1790])
+            ("stack_t" type
+               (:typedef ("__darwin_sigaltstack" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1791 1827]))          
+      :file "_sigaltstack.h"
+      :pointmax 1887
+      :fsize 1886
+      :lastmodtime '(21531 55886 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_STRUCT_SIGALTSTACK" . ((STRUCT "struct" 1449 . 1455) (symbol "__darwin_sigaltstack" 1456 . 1476)))
+          )
+)
+    (semanticdb-table "_ucontext.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_STRUCT_UCONTEXT" variable (:constant-flag t) nil [1383 1399])
+            ("__darwin_ucontext" type
+               (:members 
+                  ( ("uc_onstack" variable (:type "int") (reparse-symbol classsubparts) [1544 1579])
+                    ("uc_sigmask" variable (:type ("__darwin_sigset_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1581 1616])
+                    ("uc_stack" variable (:type ("_STRUCT_SIGALTSTACK" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1661 1694])
+                    ("uc_link" variable
+                       (:pointer 1
+                        :type ("__darwin_ucontext" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1735 1768])
+                    ("uc_mcsize" variable (:type ("__darwin_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1810 1844])
+                    ("uc_mcontext" variable
+                       (:pointer 1
+                        :type ("_STRUCT_MCONTEXT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1895 1932]))                  
+                :type "struct")
+                nil [1524 2069])
+            ("ucontext_t" type
+               (:typedef ("__darwin_ucontext" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2090 2126]))          
+      :file "_ucontext.h"
+      :pointmax 2188
+      :fsize 2187
+      :lastmodtime '(21531 55887 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_STRUCT_UCONTEXT" . ((STRUCT "struct" 1400 . 1406) (symbol "__darwin_ucontext" 1407 . 1424)))
+          )
+)
+    (semanticdb-table "_int8_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_INT8_T" variable (:constant-flag t) nil [1349 1356])
+            ("int8_t" type
+               (:typedef ("signed char")
+                :type "typedef")
+                nil [1357 1387]))          
+      :file "_int8_t.h"
+      :pointmax 1409
+      :fsize 1408
+      :lastmodtime '(21531 55884 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_INT8_T")
+          )
+)
+    (semanticdb-table "_int16_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_INT16_T" variable (:constant-flag t) nil [1350 1358])
+            ("int16_t" type
+               (:typedef ("short")
+                :type "typedef")
+                nil [1359 1383]))          
+      :file "_int16_t.h"
+      :pointmax 1406
+      :fsize 1405
+      :lastmodtime '(21531 55883 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_INT16_T")
+          )
+)
+    (semanticdb-table "_int32_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_INT32_T" variable (:constant-flag t) nil [1350 1358])
+            ("int32_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1359 1381]))          
+      :file "_int32_t.h"
+      :pointmax 1404
+      :fsize 1403
+      :lastmodtime '(21531 55883 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_INT32_T")
+          )
+)
+    (semanticdb-table "_int64_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_INT64_T" variable (:constant-flag t) nil [1350 1358])
+            ("int64_t" type
+               (:typedef ("long long")
+                :type "typedef")
+                nil [1359 1386]))          
+      :file "_int64_t.h"
+      :pointmax 1409
+      :fsize 1408
+      :lastmodtime '(21531 55884 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_INT64_T")
+          )
+)
+    (semanticdb-table "_uintptr_t.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_UINTPTR_T" variable (:constant-flag t) nil [1357 1367])
+            ("uintptr_t" type
+               (:typedef ("unsigned long")
+                :type "typedef")
+                nil [1368 1401]))          
+      :file "_uintptr_t.h"
+      :pointmax 1426
+      :fsize 1425
+      :lastmodtime '(21531 55887 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_UINTPTR_T")
           )
 ))
   :file "!Applications!Xcode.app!Contents!Developer!Platforms!MacOSX.platform!Developer!SDKs!MacOSX10.10.sdk!usr!include!sys!_types!semantic.cache"

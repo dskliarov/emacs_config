@@ -33,9 +33,17 @@
  	("/Users/dskliarov/cpp_projects/cppl/include" "/Users/dskliarov/cpp_projects/cppl/src" "/Users/dskliarov/cpp_projects/cppl")))
   '(edts-man-root "/Users/dskliarov/.emacs.d/edts/doc/17.0"))
 
+(semantic-add-system-include "/usr/lib/c++/v1/" 'c++-mode)
 (semantic-add-system-include "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/" 'c++-mode)
 (semantic-add-system-include "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/c++/4.2.1/" 'c++-mode)
-
+(setq load-path (cons (expand-file-name "/usr/local/Cellar/cmake/3.1.3/share/cmake/editors/emacs") load-path))
+;; (require 'cmake-mode)
+;; (setq auto-mode-alist
+;;       (append
+;;        '(("CMakeLists\\.txt\\'" . cmake-mode))
+;;        '(("\\.cmake\\'" . cmake-mode))
+;;        auto-mode-alist))
+;; (autoload 'cmake-mode "/usr/local/Cellar/cmake/3.1.3/share/cmake/editors/emacs/cmake-mode.el" t)
  (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
