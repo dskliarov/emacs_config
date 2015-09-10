@@ -33,20 +33,16 @@
  	("/Users/dskliarov/cpp_projects/cppl/include" "/Users/dskliarov/cpp_projects/cppl/src" "/Users/dskliarov/cpp_projects/cppl")))
   '(edts-man-root "/Users/dskliarov/.emacs.d/edts/doc/17.0"))
 
+(semantic-add-system-include "/usr/local/Cellar/gcc/5.2.0/include/c++/5.2.0/" 'c++-mode)
 (semantic-add-system-include "/usr/lib/c++/v1/" 'c++-mode)
 (semantic-add-system-include "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/" 'c++-mode)
 (semantic-add-system-include "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/c++/4.2.1/" 'c++-mode)
-(setq load-path (cons (expand-file-name "/usr/local/Cellar/cmake/3.1.3/share/cmake/editors/emacs") load-path))
-;; (require 'cmake-mode)
-;; (setq auto-mode-alist
-;;       (append
-;;        '(("CMakeLists\\.txt\\'" . cmake-mode))
-;;        '(("\\.cmake\\'" . cmake-mode))
-;;        auto-mode-alist))
-;; (autoload 'cmake-mode "/usr/local/Cellar/cmake/3.1.3/share/cmake/editors/emacs/cmake-mode.el" t)
- (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
-  '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown")))))
+;;(setq load-path (cons (expand-file-name "/usr/local/Cellar/cmake/3.1.3/share/cmake/editors/emacs") load-path))
+
+(custom-set-faces (if (not window-system) '(default ((t (:background "nil"))))))
+ ;; (custom-set-faces
+ ;;  ;; custom-set-faces was added by Custom.
+ ;;  ;; If you edit it by hand, you could mess it up, so be careful.
+ ;;  ;; Your init file should contain only one such instance.
+ ;;  ;; If there is more than one, they won't work right.
+ ;;  '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown")))))

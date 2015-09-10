@@ -12,7 +12,7 @@
 (global-semantic-idle-summary-mode 1)
 (global-semantic-stickyfunc-mode 1)
 
-(require 'semantic/bovine/gcc)
+;;(require 'semantic/bovine/gcc)
 
 (semantic-mode 1)
 

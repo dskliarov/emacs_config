@@ -12,7 +12,7 @@
     helm-gtags
     helm-projectile
     helm-swoop
-    ;; function-args
+    function-args
     clean-aindent-mode
     comment-dwim-2
     dtrt-indent
@@ -42,7 +42,7 @@
 
 (require 'setup-helm)
 (require 'setup-helm-gtags)
-;; (require 'setup-ggtags)
+(require 'setup-ggtags)
 (require 'setup-cedet)
 (require 'setup-editing)
 
@@ -68,7 +68,7 @@
 ;; company-c-headers
 (add-to-list 'company-backends '(company-c-headers company-irony))
 
-;; (setq company-c-headers-path-system '( "/usr/lib/c++/v1/"  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/" "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/c++/4.2.1/" )) ;;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include
+(setq company-c-headers-path-system '( "/usr/lib/c++/v1/"  "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/" "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/c++/4.2.1/" )) ;;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include
 ;;(setq company-c-headers-path-system '( "/usr/lib/c++/v1/" )) ;;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include
 ;; hs-minor-mode for folding source code
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
