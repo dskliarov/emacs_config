@@ -37,7 +37,6 @@
 (semantic-add-system-include "/usr/lib/c++/v1/" 'c++-mode)
 (semantic-add-system-include "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/" 'c++-mode)
 (semantic-add-system-include "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/c++/4.2.1/" 'c++-mode)
-;;(setq load-path (cons (expand-file-name "/usr/local/Cellar/cmake/3.1.3/share/cmake/editors/emacs") load-path))
 
 (custom-set-faces (if (not window-system) '(default ((t (:background "nil"))))))
  ;; (custom-set-faces

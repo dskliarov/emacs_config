@@ -33,8 +33,8 @@
 (line-number-mode 1)
 (column-number-mode 1)
 
-;; Hide the hideous Emacs splash screen	 
-(setq inhibit-splash-screen t)						
+;; Hide the hideous Emacs splash screen
+(setq inhibit-splash-screen t)
 
 ;; http://www.emacswiki.org/emacs/SavePlace
 (require 'saveplace)
